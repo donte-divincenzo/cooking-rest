@@ -16,5 +16,4 @@
         showSlide(currentSlide);
     }
 
-    // Initial slide
     showSlide(currentSlide);
