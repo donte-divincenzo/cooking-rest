@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторан "Вкусный Уголок"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Ресторан "Вкусный Уголок"</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#contact">Связаться с нами</a></li>
+                <li><a href="#footer">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="banner">
+            <div class="slides slides-1 active-slide">
+                <div class="slides-text">
+                    <h2>Лучший ресторан в городе!</h2>
+                <p>Насладитесь изысканными блюдами и уютной атмосферой.</p>
+                <p>Скидки до 20% каждую пятницу! Эксклюзивные блюда от шеф-повара.</p>
+                <p>Постоянное обновление меню. С нами обедать легко и приятно!</p>
+                </div>
+            </div>
+            <div class="slides slides-2">
+                <div class="slides-text">
+                    <h2>Мы крутые!</h2>
+                <p>Насладитесь изысканными блюдами и уютной атмосферой.</p>
+                <p>Скидки до 20% каждую пятницу! Эксклюзивные блюда от шеф-повара.</p>
+                <p>Постоянное обновление меню. С нами обедать легко и приятно!</p>
+                </div>
+            </div>
+            <div class="slides slides-3">
+                <div class="slides-text">
+                    <h2>Мы вас непременно ждём!</h2>
+                <p>Насладитесь изысканными блюдами и уютной атмосферой.</p>
+                <p>Скидки до 20% каждую пятницу! Эксклюзивные блюда от шеф-повара.</p>
+                <p>Постоянное обновление меню. С нами обедать легко и приятно!</p>
+                </div>
+            </div>
+            <button class="btn-prev" onclick="changeSlide(-1)">Предыдущий</button>
+            <button class="btn-next" onclick="changeSlide(1)">Следующий</button>
+        </div>
+    </section>
+    
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Здесь может быть текст о ресторане, его истории и философии.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Наше меню</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <h3>Горячие блюда</h3>
+                <img src="https://images.unsplash.com/photo-1602253057119-44d745d9b860?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Горячие блюда">
+                <p>Ощутите вкус наших фирменных горячих блюд, приготовленных с любовью.</p>
+                <p>Цена: от 3000 тг.</p>
+                <button>Заказать</button>
+            </div>
+            <div class="menu-item">
+                <h3>Салаты</h3>
+                <img src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Салаты">
+                <p>Свежие и полезные салаты на любой вкус.</p>
+                <p>Цена: от 1500 тг.</p>
+                <button>Заказать</button>
+            </div>
+            <div class="menu-item">
+                <h3>Десерты</h3>
+                <img src="https://images.unsplash.com/photo-1519077336050-4ca5cac9d64f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Десерты">
+                <p>Изысканные десерты для сладкоежек.</p>
+                <p>Цена: от 1000 тг.</p>
+                <button>Заказать</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="working-hours">
+        <h2>Время работы</h2>
+        <p>Мы открыты для вас каждый день с 10:00 до 22:00.</p>
+    </section>
+
+    <section id="reviews">
+        <h2>Отзывы</h2>
+        <div class="review">
+            <p>"Отличный ресторан! Всегда вкусная еда и отличное обслуживание."</p>
+            <cite>- Анна Иванова</cite>
+        </div>
+        <div class="review">
+            <p>"Посещаем регулярно. Всегда довольны качеством и атмосферой!"</p>
+            <cite>- Петр Петров</cite>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Связаться с нами</h2>
+        <div class="contact-form">
+            <form action="#">
+                <label for="name">Введите имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Введите email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-info">
+            <p>Ресторан "Вкусный Уголок"</p>
+            <p>ООО «Вкусный Уголок», 123456, г.Актобе, ул. Центральная 1, офис 1</p>
+            <p>ИНН 1234567890 ОГРН 123456789012</p>
+            <p><a href="#">Политика конфиденциальности</a></p>
+            <p>8 800 333 22 33 (Звонок по Казахстану бесплатный)</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
